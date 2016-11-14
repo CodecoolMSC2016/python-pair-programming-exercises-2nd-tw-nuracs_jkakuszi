@@ -1,9 +1,14 @@
 def palindrome(str):
-    return
+    str_without = str.replace(" ","").lower()
+    revstr =  str_without[::-1]
+    if revstr == str_without :
+        return True
+    else:
+        return False
 
 
 def main():
-    return
+    print(palindrome(str))
 
 
 if __name__ == '__main__':
